@@ -14,6 +14,11 @@ export interface ITheme {
     lineHeight: string;
     userSelect: string;
   };
+
+  iconButton: {
+    color: string;
+    hoverColor: string;
+  };
 }
 
 export { Base };
