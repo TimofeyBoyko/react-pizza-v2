@@ -18,6 +18,11 @@ const Base: ITheme = {
     lineHeight: "16px",
     userSelect: "none",
   },
+
+  iconButton: {
+    color: gray,
+    hoverColor: black,
+  },
 };
 
 export default Base;
