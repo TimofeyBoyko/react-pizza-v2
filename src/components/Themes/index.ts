@@ -52,41 +52,8 @@ export interface ITheme {
       primaryDisabled: string;
     };
 
-    badgeColor: {
-      base: string;
-      baseHover: string;
-      baseActive: string;
-      baseDisabled: string;
-
-      primary: string;
-      primaryHover: string;
-      primaryActive: string;
-      primaryDisabled: string;
-    };
-
-    badgeBackground: {
-      base: string;
-      baseHover: string;
-      baseActive: string;
-      baseDisabled: string;
-
-      primary: string;
-      primaryHover: string;
-      primaryActive: string;
-      primaryDisabled: string;
-    };
-
-    badgeBorder: {
-      base: string;
-      baseHover: string;
-      baseActive: string;
-      baseDisabled: string;
-
-      primary: string;
-      primaryHover: string;
-      primaryActive: string;
-      primaryDisabled: string;
-    };
+    badgeColor: string;
+    badgeBackground: string;
 
     borderRadius: string;
 

@@ -70,41 +70,8 @@ const Base: ITheme = {
       primaryDisabled: "none",
     },
 
-    badgeColor: {
-      base: "",
-      baseHover: "",
-      baseActive: "",
-      baseDisabled: "",
-
-      primary: "",
-      primaryHover: "",
-      primaryActive: "",
-      primaryDisabled: "",
-    },
-
-    badgeBackground: {
-      base: "",
-      baseHover: "",
-      baseActive: "",
-      baseDisabled: "",
-
-      primary: "",
-      primaryHover: "",
-      primaryActive: "",
-      primaryDisabled: "",
-    },
-
-    badgeBorder: {
-      base: "",
-      baseHover: "",
-      baseActive: "",
-      baseDisabled: "",
-
-      primary: "",
-      primaryHover: "",
-      primaryActive: "",
-      primaryDisabled: "",
-    },
+    badgeColor: white,
+    badgeBackground: orangeMain,
 
     borderRadius: "30px",
 
