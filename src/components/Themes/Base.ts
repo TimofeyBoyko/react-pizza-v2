@@ -110,6 +110,11 @@ const Base: ITheme = {
 
     padding: "12px 26px",
   },
+
+  iconButton: {
+    color: gray,
+    hoverColor: black,
+  },
 };
 
 export default Base;

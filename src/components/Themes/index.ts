@@ -92,6 +92,11 @@ export interface ITheme {
 
     padding: string;
   };
+
+  iconButton: {
+    color: string;
+    hoverColor: string;
+  };
 }
 
 export { Base };
