@@ -47,7 +47,7 @@ const StyledText = styled.p<StyledTextProps>`
     props.noUserSelect &&
     css`
       user-select: ${props.theme.text.userSelect};
-    `}
+    `};
 
   ${(props) =>
     props.truncate &&
@@ -56,7 +56,10 @@ const StyledText = styled.p<StyledTextProps>`
       overflow: hidden;
       text-overflow: ellipsis;
       width: 100%;
-    `}
+    `};
+
+  padding: 0;
+  margin: 0;
 `;
 
 StyledText.defaultProps = { theme: Base };

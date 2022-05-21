@@ -24,20 +24,4 @@ describe("Icon button tests", () => {
 
     expect(screen.getByTestId(/icon-button/i)).toBeTruthy();
   });
-
-  it("Size", () => {
-    render(<IconButton {...defaultProps} />);
-
-    expect(screen.getByTestId(/icon-button/i)).toHaveStyleRule("width", "25px");
-    expect(screen.getByTestId(/icon-button/i)).toHaveStyleRule(
-      "height",
-      "25px"
-    );
-  });
-
-  it("Color", () => {
-    render(<IconButton {...defaultProps} color="red" />);
-
-    expect(screen.getByTestId(/icon-button/i)).toHaveStyleRule("color", "red");
-  });
 });

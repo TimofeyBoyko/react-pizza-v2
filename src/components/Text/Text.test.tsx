@@ -19,6 +19,9 @@ const defaultProps: TextProps = {
   isDisabled: false,
   isBold: false,
   testId: "text",
+  id: "",
+  className: "",
+  style: {},
 };
 
 describe("Text tests", () => {

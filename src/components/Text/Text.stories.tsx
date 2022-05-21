@@ -11,16 +11,3 @@ export default {
 const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
 export const Default = Template.bind({});
-
-Default.args = {
-  text: "Test text",
-  color: "",
-  backgroundColor: "",
-  fontSize: "",
-  fontWeight: "",
-  fontStyle: "",
-  truncate: false,
-  noUserSelect: false,
-  isDisabled: false,
-  isBold: false,
-};
