@@ -10,6 +10,8 @@ const {
   grayMid,
   grayMaxLight,
   graySilver,
+  grayVeryDark,
+  grayVeryLight,
   blueHover,
   orangeMain,
   orangeHover,
@@ -81,6 +83,22 @@ const Base: ITheme = {
   iconButton: {
     color: gray,
     hoverColor: black,
+  },
+
+  navigationButton: {
+    color: {
+      default: black,
+      hover: black,
+      active: white,
+      disabled: grayVeryDark,
+    },
+
+    backgroundColor: {
+      default: grayVeryLight,
+      hover: grayMid,
+      active: black,
+      disabled: gray,
+    },
   },
 };
 
