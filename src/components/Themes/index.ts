@@ -80,6 +80,20 @@ export interface ITheme {
     };
   };
 
+  selectionButton: {
+    color: {
+      default: string;
+      disabled: string;
+    };
+
+    background: {
+      default: string;
+      active: string;
+    };
+
+    boxShadow: string;
+  };
+
   layout: {
     contentBackground: string;
   };

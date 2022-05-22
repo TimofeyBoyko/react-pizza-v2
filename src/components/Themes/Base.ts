@@ -104,6 +104,20 @@ const Base: ITheme = {
     },
   },
 
+  selectionButton: {
+    color: {
+      default: black,
+      disabled: gray,
+    },
+
+    background: {
+      default: "transparent",
+      active: white,
+    },
+
+    boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.04)",
+  },
+
   layout: {
     contentBackground: white,
   },
