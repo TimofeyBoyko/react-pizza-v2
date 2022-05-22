@@ -2,9 +2,9 @@ import React from "react";
 
 import Text from "../Text";
 
-import StyledNavigationButton from "./StyledNavigationButton";
+import StyledFilterButton from "./StyledFilterButton";
 
-export type NavigationButtonProps = {
+export type FilterButtonProps = {
   label: string;
   value: string | number;
   isActive?: boolean;
@@ -16,7 +16,7 @@ export type NavigationButtonProps = {
   style?: React.CSSProperties;
 };
 
-const NavigationButton: React.FC<NavigationButtonProps> = ({
+const FilterButton: React.FC<FilterButtonProps> = ({
   value,
   label,
   onClick,
@@ -32,7 +32,7 @@ const NavigationButton: React.FC<NavigationButtonProps> = ({
   };
 
   return (
-    <StyledNavigationButton
+    <StyledFilterButton
       id={id}
       className={className}
       style={style}
@@ -42,15 +42,15 @@ const NavigationButton: React.FC<NavigationButtonProps> = ({
       data-testid={testId}
     >
       <Text
-        className="navigation-button_text"
+        className="filter-button_text"
         text={label}
         isBold
         fontSize="18px"
         lineHeight="22px"
         noUserSelect
       />
-    </StyledNavigationButton>
+    </StyledFilterButton>
   );
 };
 
-export default React.memo(NavigationButton);
+export default React.memo(FilterButton);

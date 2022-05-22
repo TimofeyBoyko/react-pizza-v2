@@ -88,7 +88,7 @@ const Base: ITheme = {
     hoverColor: black,
   },
 
-  navigationButton: {
+  filterButton: {
     color: {
       default: black,
       hover: black,

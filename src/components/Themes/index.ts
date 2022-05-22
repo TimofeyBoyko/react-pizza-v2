@@ -65,7 +65,7 @@ export interface ITheme {
     hoverColor: string;
   };
 
-  navigationButton: {
+  filterButton: {
     color: {
       default: string;
       hover: string;
