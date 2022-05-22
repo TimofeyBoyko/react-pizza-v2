@@ -28,7 +28,7 @@ const NavigationButton: React.FC<NavigationButtonProps> = ({
   testId,
 }) => {
   const onClickAction: () => void = () => {
-    !isDisabled && onClick(value);
+    !isDisabled && !isActive && onClick(value);
   };
 
   return (

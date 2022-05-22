@@ -12,6 +12,8 @@ const activeButton = css`
   background-color: ${(props) =>
     props.theme.navigationButton.backgroundColor.active};
 
+  cursor: unset;
+
   .navigation-button_text {
     color: ${(props) => props.theme.navigationButton.color.active};
   }
@@ -51,10 +53,11 @@ const StyledNavigationButton = styled.div<StyledNavigationButtonProps>`
 
   :hover {
     background-color: ${(props) =>
-      props.theme.navigationButton.backgroundColor.hover};
+      !props.isActive && props.theme.navigationButton.backgroundColor.hover};
 
     .navigation-button_text {
-      color: ${(props) => props.theme.navigationButton.color.hover};
+      color: ${(props) =>
+        !props.isActive && props.theme.navigationButton.color.hover};
     }
   }
 
