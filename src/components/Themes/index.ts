@@ -64,6 +64,21 @@ export interface ITheme {
     color: string;
     hoverColor: string;
   };
+
+  navigationButton: {
+    color: {
+      default: string;
+      hover: string;
+      active: string;
+      disabled: string;
+    };
+    backgroundColor: {
+      default: string;
+      hover: string;
+      active: string;
+      disabled: string;
+    };
+  };
 }
 
 export { Base };

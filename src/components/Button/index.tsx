@@ -43,7 +43,7 @@ const Button: React.FC<ButtonProps> = ({
       style={style}
       type={type}
       onClick={onClickAction}
-      scale={scale}
+      scale={scale ? scale : undefined}
       isDisabled={isDisabled}
       data-testid={testId}
     >
