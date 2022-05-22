@@ -10,8 +10,6 @@ const StyledFilter = styled.nav<StyledFilterProps>`
 
   box-sizing: border-box;
 
-  padding: 0px 75px;
-
   display: flex;
   align-items: center;
 
