@@ -11,7 +11,6 @@ const StyledFilter = styled.nav<StyledFilterProps>`
   box-sizing: border-box;
 
   padding: 0px 75px;
-  margin-top: 30px;
 
   display: flex;
   align-items: center;
