@@ -18,10 +18,11 @@ const {
   orangePressed,
   orangeDisabled,
   silverDark,
+  lightCumulus,
 } = globalColors;
 
 const Base: ITheme = {
-  background: white,
+  background: lightCumulus,
 
   text: {
     color: black,
