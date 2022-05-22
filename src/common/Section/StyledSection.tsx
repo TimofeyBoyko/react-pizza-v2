@@ -11,8 +11,9 @@ const StyledSection = styled.section<StyledSectionProps>`
   width: 100%;
   height: 100%;
 
-  overflow-x: hidden;
-  overflow-y: auto;
+  box-sizing: border-box;
+
+  overflow: hidden;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -21,11 +22,19 @@ const StyledSection = styled.section<StyledSectionProps>`
   .section_filter {
     display: flex;
     align-items: center;
+    padding: 0 75px;
   }
 
   .section_body {
     width: 100%;
     height: 100%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding: 20px 60px 0 75px;
+
+    box-sizing: border-box;
   }
 `;
 
