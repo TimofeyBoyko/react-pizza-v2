@@ -11,6 +11,8 @@ const {
   grayMaxLight,
   graySilver,
   grayVeryDark,
+  grayLight,
+  grayLightMid,
   grayVeryLight,
   blueHover,
   orangeMain,
@@ -99,6 +101,20 @@ const Base: ITheme = {
       hover: grayMid,
       active: black,
       disabled: gray,
+    },
+  },
+
+  layout: {
+    contentBackground: white,
+  },
+
+  header: {
+    borderBottom: `1px solid ${grayLightMid}`,
+
+    cart: {
+      color: white,
+      separatorColor: grayVeryLight,
+      background: orangeMain,
     },
   },
 };

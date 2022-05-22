@@ -79,6 +79,20 @@ export interface ITheme {
       disabled: string;
     };
   };
+
+  layout: {
+    contentBackground: string;
+  };
+
+  header: {
+    borderBottom: string;
+
+    cart: {
+      color: string;
+      separatorColor: string;
+      background: string;
+    };
+  };
 }
 
 export { Base };
