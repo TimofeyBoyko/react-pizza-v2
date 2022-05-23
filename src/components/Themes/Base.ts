@@ -28,7 +28,7 @@ const Base: ITheme = {
 
   text: {
     color: black,
-    disabledColor: gray,
+    disabledColor: grayMain,
     background: "transparent",
     fontSize: "13px",
     fontWeight: "400",
@@ -97,7 +97,7 @@ const Base: ITheme = {
     },
 
     backgroundColor: {
-      default: grayVeryLight,
+      default: grayLight,
       hover: grayMid,
       active: black,
       disabled: gray,
