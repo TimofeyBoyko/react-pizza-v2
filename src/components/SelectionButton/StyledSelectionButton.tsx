@@ -11,6 +11,8 @@ type StyledSelectionButtonProps = {
 const activeCss = css`
   background: ${(props) => props.theme.selectionButton.background.active};
   box-shadow: ${(props) => props.theme.selectionButton.boxShadow};
+
+  cursor: unset;
 `;
 
 const StyledSelectionButton = styled.div<StyledSelectionButtonProps>`
@@ -19,7 +21,9 @@ const StyledSelectionButton = styled.div<StyledSelectionButtonProps>`
   justify-content: center;
 
   width: 100%;
-  height: 46px;
+  height: 32px;
+
+  cursor: pointer;
 
   box-sizing: border-box;
 
