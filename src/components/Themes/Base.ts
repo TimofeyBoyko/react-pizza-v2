@@ -11,6 +11,8 @@ const {
   grayMaxLight,
   graySilver,
   grayVeryDark,
+  grayLight,
+  grayLightMid,
   grayVeryLight,
   blueHover,
   orangeMain,
@@ -18,14 +20,15 @@ const {
   orangePressed,
   orangeDisabled,
   silverDark,
+  lightCumulus,
 } = globalColors;
 
 const Base: ITheme = {
-  background: white,
+  background: lightCumulus,
 
   text: {
     color: black,
-    disabledColor: gray,
+    disabledColor: grayMain,
     background: "transparent",
     fontSize: "13px",
     fontWeight: "400",
@@ -85,7 +88,7 @@ const Base: ITheme = {
     hoverColor: black,
   },
 
-  navigationButton: {
+  filterButton: {
     color: {
       default: black,
       hover: black,
@@ -94,10 +97,38 @@ const Base: ITheme = {
     },
 
     backgroundColor: {
-      default: grayVeryLight,
+      default: grayLight,
       hover: grayMid,
       active: black,
       disabled: gray,
+    },
+  },
+
+  selectionButton: {
+    color: {
+      default: black,
+      disabled: gray,
+    },
+
+    background: {
+      default: "transparent",
+      active: white,
+    },
+
+    boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.04)",
+  },
+
+  layout: {
+    contentBackground: white,
+  },
+
+  header: {
+    borderBottom: `1px solid ${grayLightMid}`,
+
+    cart: {
+      color: white,
+      separatorColor: grayVeryLight,
+      background: orangeMain,
     },
   },
 };

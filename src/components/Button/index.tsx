@@ -12,6 +12,7 @@ export type ButtonProps = {
   icon?: string;
   badgeText?: string;
   scale?: boolean;
+  isBoldText?: boolean;
   isDisabled?: boolean;
   testId?: string;
   id?: string;
@@ -26,6 +27,7 @@ const Button: React.FC<ButtonProps> = ({
   icon,
   badgeText,
   scale,
+  isBoldText,
   isDisabled,
   id,
   className,
@@ -53,8 +55,8 @@ const Button: React.FC<ButtonProps> = ({
         text={label}
         fontSize="17px"
         lineHeight="17px"
-        fontWeight="500"
         noUserSelect
+        isBold={isBoldText}
       />
       {badgeText && type === "base" && (
         <StyledBadge>

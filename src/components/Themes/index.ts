@@ -65,7 +65,7 @@ export interface ITheme {
     hoverColor: string;
   };
 
-  navigationButton: {
+  filterButton: {
     color: {
       default: string;
       hover: string;
@@ -77,6 +77,34 @@ export interface ITheme {
       hover: string;
       active: string;
       disabled: string;
+    };
+  };
+
+  selectionButton: {
+    color: {
+      default: string;
+      disabled: string;
+    };
+
+    background: {
+      default: string;
+      active: string;
+    };
+
+    boxShadow: string;
+  };
+
+  layout: {
+    contentBackground: string;
+  };
+
+  header: {
+    borderBottom: string;
+
+    cart: {
+      color: string;
+      separatorColor: string;
+      background: string;
     };
   };
 }
