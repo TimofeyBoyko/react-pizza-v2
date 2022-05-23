@@ -13,12 +13,19 @@ const Header: React.FC<HeaderProps> = () => {
       <StyledInfo>
         <ReactSVG className="header_logo" src="/img/logo.svg" alt="Logo" />
         <div className="header__info-text">
-          <Text text="REACT PIZZA" fontSize="24px" lineHeight="29px" isBold />
+          <Text
+            text="REACT PIZZA"
+            fontSize="24px"
+            lineHeight="29px"
+            isBold
+            noUserSelect
+          />
           <Text
             text="Лучшая пицца в интернете!"
             fontSize="14px"
             lineHeight="19px"
             isDisabled
+            noUserSelect
           />
         </div>
       </StyledInfo>
@@ -29,6 +36,7 @@ const Header: React.FC<HeaderProps> = () => {
           fontSize="16px"
           lineHeight="19px"
           isBold
+          noUserSelect
         />
         <div className="cart_separator"></div>
         <ReactSVG
@@ -42,6 +50,7 @@ const Header: React.FC<HeaderProps> = () => {
           fontSize="16px"
           lineHeight="19px"
           isBold
+          noUserSelect
         />
       </StyledCart>
     </StyledHeader>
